@@ -1,10 +1,11 @@
-import { Component } from "react";
-import React from "react";
-import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { red, grey } from "@material-ui/core/colors/";
-import Nav from "./navigation/Nav";
+import { Component } from 'react';
+import React from 'react';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { red, grey } from '@material-ui/core/colors/';
+import Nav from './navigation/Nav';
+import Overview from './overview/Overview';
 
-const theme = createMuiTheme({
+export const theme = createMuiTheme({
   palette: {
     primary: {
       main: red[400],
@@ -24,6 +25,7 @@ class App extends Component {
     return (
       <ThemeProvider theme={theme}>
         <Nav />
+        <Overview />
       </ThemeProvider>
     );
   }

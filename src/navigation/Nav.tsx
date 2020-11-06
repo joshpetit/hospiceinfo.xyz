@@ -29,7 +29,9 @@ export default function Nav() {
         <IconButton className={classes.menuButton} edge="start">
           <Icon>menu</Icon>
         </IconButton>
-        <Typography className={classes.title}variant="h5">Hospice.xyz</Typography>
+        <Typography className={classes.title} variant="h5">
+          Hospice.xyz
+        </Typography>
 
         <Button> About </Button>
       </Toolbar>
