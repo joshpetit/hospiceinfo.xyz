@@ -4,6 +4,19 @@ import React from "react";
 import { Component } from "react";
 import Image from 'material-ui-image'
 
+let sections = [
+  {
+    title: "General",
+    text: "Text and Text and Text and Text",
+    imageURL: "placeholders/500x500.jpg"
+  },
+  {
+    title: "General",
+    text: "Text and Text and Text and Text",
+    imageURL: "placeholders/500x500.jpg"
+  }
+]
+
 export default class HospiceInfo extends Component {
   render() {
     return (
@@ -17,6 +30,22 @@ export default class HospiceInfo extends Component {
         <Typography color="primary" variant="h2">
           What is Hospice?
         </Typography>
+        {sections.map( (x, key) =><InfoSection title={x.title} text={x.text} imageURL={x.imageURL} />)}
+      </Container>
+    );
+  }
+}
+
+interface Info {
+  title: string;
+  text: string;
+  imageURL: string;
+}
+
+class InfoSection extends Component<Info> {
+
+  render() {
+    return(
         <Container
           style={{
             marginTop: "3em",
@@ -25,20 +54,19 @@ export default class HospiceInfo extends Component {
           maxWidth="lg"
         >
           <Box padding={5} boxShadow={5} bgcolor={red[100]}>
-            <Typography variant="h4">General</Typography>
+            <Typography variant="h4">{this.props.title}</Typography>
               <Grid container justify='center' spacing={2} direction="row">
 
-                <Grid item xs={8}>
-                  <Typography variant="body1">Text adnd what not</Typography>
+                <Grid item xs={12} lg={8}>
+                  <Typography variant="body1">{this.props.text}</Typography>
                 </Grid>
-                <Grid item xs={4}>
-                  <Image color={red[100]} src="placeholders/500x500.jpg"/>
+                <Grid item xs={12} lg={4}>
+                  <Image color={red[100]} src={this.props.imageURL}/>
                 </Grid>
 
             </Grid>
           </Box>
         </Container>
-      </Container>
-    );
+    )
   }
 }
