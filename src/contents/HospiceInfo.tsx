@@ -1,21 +1,26 @@
-import { Box, Button, Container, Grid, Typography } from "@material-ui/core";
-import { red } from "@material-ui/core/colors/";
+import { Box, Container, Grid, Typography } from "@material-ui/core";
+import { grey, red } from "@material-ui/core/colors/";
 import React from "react";
 import { Component } from "react";
-import Image from 'material-ui-image'
+import Image from "material-ui-image";
 
 let sections = [
   {
     title: "General",
     text: "Text and Text and Text and Text",
-    imageURL: "placeholders/500x500.jpg"
+    imageURL: "placeholders/500x500.jpg",
   },
   {
     title: "General",
     text: "Text and Text and Text and Text",
-    imageURL: "placeholders/500x500.jpg"
-  }
-]
+    imageURL: "placeholders/500x500.jpg",
+  },
+  {
+    title: "General",
+    text: "Text and Text and Text and Text",
+    imageURL: "placeholders/500x500.jpg",
+  },
+];
 
 export default class HospiceInfo extends Component {
   render() {
@@ -27,46 +32,56 @@ export default class HospiceInfo extends Component {
         }}
         maxWidth="xl"
       >
-        <Typography color="primary" variant="h2">
+        <Typography color="primary" align="center" variant="h2">
           What is Hospice?
         </Typography>
-        {sections.map( (x, key) =><InfoSection title={x.title} text={x.text} imageURL={x.imageURL} />)}
+        {sections.map((x, key) => (
+          <InfoSection
+            key={key}
+            index={key}
+            title={x.title}
+            text={x.text}
+            imageURL={x.imageURL}
+          />
+        ))}
       </Container>
     );
   }
 }
 
 interface Info {
+  index: number;
   title: string;
   text: string;
   imageURL: string;
 }
 
 class InfoSection extends Component<Info> {
-
   render() {
-    return(
-        <Container
-          style={{
-            marginTop: "3em",
-            marginBottom: "2em",
-          }}
-          maxWidth="lg"
+    return (
+      <Container
+        style={{
+          marginTop: "3em",
+          marginBottom: "2em",
+        }}
+        maxWidth="lg"
+      >
+        <Box
+          padding={5}
+          boxShadow={5}
+          bgcolor={this.props.index % 2 === 1 ? red[100] : grey[100]}
         >
-          <Box padding={5} boxShadow={5} bgcolor={red[100]}>
-            <Typography variant="h4">{this.props.title}</Typography>
-              <Grid container justify='center' spacing={2} direction="row">
-
-                <Grid item xs={12} lg={8}>
-                  <Typography variant="body1">{this.props.text}</Typography>
-                </Grid>
-                <Grid item xs={12} lg={4}>
-                  <Image color={red[100]} src={this.props.imageURL}/>
-                </Grid>
-
+          <Typography variant="h4">{this.props.title}</Typography>
+          <Grid container justify="center" spacing={2} direction="row">
+            <Grid item xs={12} lg={8}>
+              <Typography variant="body1">{this.props.text}</Typography>
             </Grid>
-          </Box>
-        </Container>
-    )
+            <Grid item xs={12} lg={4}>
+              <Image color={red[100]} src={this.props.imageURL} />
+            </Grid>
+          </Grid>
+        </Box>
+      </Container>
+    );
   }
 }
