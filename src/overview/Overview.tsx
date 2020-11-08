@@ -67,9 +67,6 @@ interface CardItems {
 }
 
 class CardTem extends Component<CardItems> {
-  constructor(props: CardItems) {
-    super(props);
-  }
   render() {
     return (
       <Grid item xs={4}>
