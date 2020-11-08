@@ -28,7 +28,6 @@ const styles = {
   card: {
     background: grey[100],
     margin: "10px",
-    height: '20vw'
   },
   button: {
     background: red[400],
@@ -36,7 +35,6 @@ const styles = {
   container: {
     display: "flex",
     justifyContent: "center",
-    height: "500px",
   },
 };
 
@@ -44,7 +42,7 @@ export default class Overview extends Component {
   render() {
     return (
       <Container maxWidth="xl">
-        <Box marginTop={15} boxShadow={5} style={styles.container}>
+        <Box marginTop={15} style={styles.container}>
           <Grid
             container
             direction="row"
@@ -69,7 +67,7 @@ interface CardItems {
 class CardTem extends Component<CardItems> {
   render() {
     return (
-      <Grid item xs={4}>
+      <Grid item xs={12} lg={4}>
         <Card raised={true} style={styles.card}>
           <CardContent style={{ color: "black" }}>
             <Typography align="center" variant="h4">
