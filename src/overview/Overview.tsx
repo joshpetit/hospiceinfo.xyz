@@ -28,6 +28,7 @@ const styles = {
   card: {
     background: grey[100],
     margin: "10px",
+    height: '20vw'
   },
   button: {
     background: red[400],

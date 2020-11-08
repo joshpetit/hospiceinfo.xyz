@@ -4,6 +4,7 @@ import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { red, grey } from "@material-ui/core/colors/";
 import Nav from "./navigation/Nav";
 import Overview from "./overview/Overview";
+import HospiceInfo from "./contents/HospiceInfo";
 
 export const theme = createMuiTheme({
   typography: {
@@ -11,7 +12,7 @@ export const theme = createMuiTheme({
       fontSize: "2.5rem",
     },
     body1: {
-      fontSize: "1.3rem",
+      fontSize: "2rem",
       color: grey[600],
     },
   },
@@ -32,6 +33,7 @@ class App extends Component {
       <ThemeProvider theme={theme}>
         <Nav />
         <Overview />
+        <HospiceInfo />
       </ThemeProvider>
     );
   }
