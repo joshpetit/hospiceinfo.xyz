@@ -77,7 +77,10 @@ class InfoSection extends Component<Info> {
               <Typography variant="body1">{this.props.text}</Typography>
             </Grid>
             <Grid item xs={12} lg={4}>
-              <Image color={red[100]} src={this.props.imageURL} />
+              <Image 
+              color={'transparent'} 
+              src={this.props.imageURL} 
+              />
             </Grid>
           </Grid>
         </Box>
