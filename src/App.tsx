@@ -15,6 +15,9 @@ export const theme = createMuiTheme({
       fontSize: "2rem",
       color: grey[600],
     },
+    button: {
+      fontSize: "1.5rem"
+    }
   },
   palette: {
     primary: {
