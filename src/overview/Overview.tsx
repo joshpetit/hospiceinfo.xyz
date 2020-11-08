@@ -42,7 +42,7 @@ export default class Overview extends Component {
   render() {
     return (
       <Container maxWidth="xl">
-        <Box marginTop={15} style={styles.container}>
+        <Box marginTop={2} style={styles.container}>
           <Grid
             container
             direction="row"
