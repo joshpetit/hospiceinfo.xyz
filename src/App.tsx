@@ -6,13 +6,22 @@ import Nav from './navigation/Nav';
 import Overview from './overview/Overview';
 
 export const theme = createMuiTheme({
+  typography: {
+    h4: {
+      fontSize: '2.5rem'
+    },
+    body1: {
+      fontSize: '1.3rem',
+      color: grey[600]
+    }
+  },
   palette: {
     primary: {
       main: red[400],
     },
     type: "dark",
     background: {
-      default: "#222222",
+      default: "red",
     },
     secondary: {
       main: grey[100],
