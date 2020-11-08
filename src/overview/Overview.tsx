@@ -9,18 +9,31 @@ import {
   Card,
   CardContent,
 } from "@material-ui/core";
-import { theme } from "../App";
-import { red } from '@material-ui/core/colors/'
+import { grey, red } from '@material-ui/core/colors/'
+
+let cards = [
+  {
+    "title": "What is Hospice?",
+    "text": "A general overview of what hospice is, what it isn't, its benefits, and who can receive it"
+  },
+  {
+    "title": "Meet The Team",
+    "text": "Meet the members of a typical hospice team and see their role in helping you"
+  }
+]
+
 const styles = {
   card: {
-    background: theme.palette.secondary.main,
-    margin: "5px",
+    background: grey[100],
+    margin: "10px",
   },
   button: {
-    background: theme.palette.primary.main,
+    background: red[400],
   },
   container: {
-    background: theme.palette.secondary.main,
+    display: 'flex',
+    justifyContent: 'center',
+    height: '500px',
   },
 };
 
@@ -28,33 +41,43 @@ export default class Overview extends Component {
   render() {
     return (
       <Container>
-        <Box m={1} boxShadow={5} style={styles.container}>
+        <Box marginTop={19} boxShadow={5} style={styles.container}>
           <Grid container direction="row" justify="space-evenly" alignItems="center">
-            <Grid item xs={4}>
-              <Card style={styles.card}>
-                <CardContent style={{color: 'black'}}>
-                  <Typography  align="center" variant="h4">
-                    What is Hospice?
-                  </Typography>
-                  <Typography align="left">
-                    A general overview of what hospice is, what it isn't,
-                    its benefits, who receives it
-                  </Typography>
-                  <Box textAlign='center'>
-                    <Button style={styles.button} > Click Here </Button>
-                  </Box>
-                </CardContent>
-              </Card>
-            </Grid>
-
-            <Grid item xs={4}>
-              <Card>
-                <CardContent>Hello</CardContent>
-              </Card>
-            </Grid>
+            {cards.map( (x, key) => <CardTem key={key} title={x.title} text={x.text} />)}
           </Grid>
         </Box>
       </Container>
     );
+  }
+}
+
+interface CardItems {
+  title: string, 
+  text: string, 
+}
+
+class CardTem extends Component<CardItems> {
+  constructor(props: CardItems) {
+    super(props)
+
+  }
+  render() {
+    return(
+          <Grid item xs={4}>
+            <Card style={styles.card}>
+              <CardContent style={{color: 'black'}}>
+                <Typography  align="center" variant="h4">
+                  {this.props.title}
+                </Typography>
+                <Typography  paragraph={true} variant='body1' align="center">
+                  {this.props.text}
+                </Typography>
+                <Box textAlign='center'>
+                  <Button style={styles.button}>Click Here</Button>
+                </Box>
+              </CardContent>
+          </Card>
+        </Grid>
+    )
   }
 }
