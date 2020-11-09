@@ -5,6 +5,7 @@ import { red, grey } from "@material-ui/core/colors/";
 import Nav from "./navigation/Nav";
 import Overview from "./overview/Overview";
 import HospiceInfo from "./contents/HospiceInfo";
+import Team from "./contents/Team";
 
 export const theme = createMuiTheme({
   typography: {
@@ -37,6 +38,7 @@ class App extends Component {
         <Nav />
         <Overview />
         <HospiceInfo />
+        <Team />
       </ThemeProvider>
     );
   }
