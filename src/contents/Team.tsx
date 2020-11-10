@@ -36,6 +36,20 @@ const people = [
   },
 ]
 
+interface HIProps {
+  person: Person;
+}
+
+class HoverableImage extends Component<HIProps> {
+  render() {
+    return (
+      <Grid item xs={1} >
+        <Image src={this.props.person.imageURL} />
+      </Grid>
+    )
+  }
+}
+
 export default class Team extends Component {
   render() {
     return (
