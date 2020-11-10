@@ -77,7 +77,7 @@ export default class Team extends Component {
 
         <div className="people-cards-container" style={{backgroundColor:"red"}}>
           TEST
-          {persons.map((person) => {
+          {persons.map((person) => 
             // nthchild(odd) column-reverse
             <Grid container justify="center" spacing={1} direction="column">
               <Grid item xs={1} spacing={1}>
@@ -88,7 +88,7 @@ export default class Team extends Component {
                 <p>{person.longText}</p>
               </Grid>
             </Grid>
-          })
+          )
           }
         </div>
 
