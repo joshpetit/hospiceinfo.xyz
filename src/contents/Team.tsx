@@ -57,3 +57,9 @@ export default class Team extends Component {
     );
   }
 }
+
+export const peopleCards = () => {
+  return (
+    <div></div>
+  )
+}
