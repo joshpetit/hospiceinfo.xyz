@@ -3,6 +3,12 @@ import { Component } from "react";
 import { Hidden, Grid, Box, Container, Typography } from "@material-ui/core";
 import Image from "material-ui-image";
 
+interface Person {
+  imageURL: string;
+  shortText: string;
+  longText: string;
+}
+
 const people = [
   {
     url: "placeholders/500x500.jpg"
