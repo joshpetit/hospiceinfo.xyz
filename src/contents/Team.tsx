@@ -4,6 +4,7 @@ import { Hidden, Grid, Box, Container, Typography } from "@material-ui/core";
 import Image from "material-ui-image";
 
 interface Person {
+  name: string;
   imageURL: string;
   shortText: string;
   longText: string;
@@ -15,16 +16,16 @@ interface Person {
 // and the 2nd part (the alternating image and text)
 // you can map for just the image (1st part)
 // and map for the other data (2nd part)
-const persons = [
+const persons: Person[] = [
   {
     name: "First Last",
-    image: "",
+    imageURL: "placeholders/200x200.png",
     shortText: "text placeholder string string string",
     longText: "text placeholder text placeholder text placeholder text placeholder text placeholder",
   },
   {
     name: "2 First Last",
-    image: "",
+    imageURL: "placeholders/200x200.png",
     shortText: "2 text placeholder string string string",
     longText: "2 text placeholder text placeholder text placeholder text placeholder text placeholder",
   }
@@ -75,22 +76,23 @@ export default class Team extends Component {
           </Grid>
         </Hidden>
 
-        <div className="people-cards-container" style={{backgroundColor:"red"}}>
-          TEST
+        <Container maxWidth="lg">
+        <Grid container justify="center" >
           {persons.map((person) => 
             // nthchild(odd) column-reverse
-            <Grid container justify="center" spacing={1} direction="column">
-              <Grid item xs={1} spacing={1}>
-               <img src={person.image}/> 
+            <Grid container spacing={1} direction="row">
+              <Grid item xs={12} md={3} spacing={1}>
+               <Image src={person.imageURL}/> 
               </Grid>
-              <Grid item xs={1} spacing={1}>
+              <Grid item xs={12} md={8} spacing={1}>
                 <p>{person.name}</p>
                 <p>{person.longText}</p>
               </Grid>
             </Grid>
           )
           }
-        </div>
+        </Grid>
+        </Container>  
 
       </Container>
     );
