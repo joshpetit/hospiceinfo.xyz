@@ -10,33 +10,26 @@ interface Person {
   longText: string;
 }
 
-//----------------------------------------------------------------------------------------------------
-// You can have an array of objects of the people's data. 
-// In both the 1st part(just photos) 
-// and the 2nd part (the alternating image and text)
-// you can map for just the image (1st part)
-// and map for the other data (2nd part)
 const persons: Person[] = [
   {
     name: "First Last",
-    imageURL: "placeholders/500x500.jpg",
+    imageURL: "placeholders/person.png",
     shortText: "text placeholder string string string",
     longText: "text placeholder text placeholder text placeholder text placeholder text placeholder",
   },
   {
     name: "2 First Last",
-    imageURL: "placeholders/500x500.jpg",
+    imageURL: "placeholders/person.png",
     shortText: "2 text placeholder string string string",
     longText: "2 text placeholder text placeholder text placeholder text placeholder text placeholder",
   },
   {
     name: "3 First Last",
-    imageURL: "placeholders/500x500.jpg",
+    imageURL: "placeholders/person.png",
     shortText: "3 text placeholder string string string",
     longText: "3 text placeholder text placeholder text placeholder text placeholder text placeholder",
   }
 ]
-//----------------------------------------------------------------------------------------------------
 
 
 export default class Team extends Component {
@@ -62,7 +55,11 @@ export default class Team extends Component {
             // nthchild(odd) column-reverse
             <Grid container spacing={1} direction="row">
               <Grid item xs={12} md={3} spacing={1}>
-               <Image src={person.imageURL}/> 
+                {// Since the vertical images look so squished
+                  // we can create special crops and add a
+                  // .pt extension
+                 }
+               <Image src={person.imageURL+ ".pt"}/> 
               </Grid>
               <Grid item xs={12} md={8} spacing={1}>
                 <p>{person.name}</p>
