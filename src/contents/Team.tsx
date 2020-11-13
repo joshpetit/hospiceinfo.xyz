@@ -19,45 +19,25 @@ interface Person {
 const persons: Person[] = [
   {
     name: "First Last",
-    imageURL: "placeholders/200x200.png",
+    imageURL: "placeholders/500x500.jpg",
     shortText: "text placeholder string string string",
     longText: "text placeholder text placeholder text placeholder text placeholder text placeholder",
   },
   {
     name: "2 First Last",
-    imageURL: "placeholders/200x200.png",
+    imageURL: "placeholders/500x500.jpg",
     shortText: "2 text placeholder string string string",
     longText: "2 text placeholder text placeholder text placeholder text placeholder text placeholder",
+  },
+  {
+    name: "3 First Last",
+    imageURL: "placeholders/500x500.jpg",
+    shortText: "3 text placeholder string string string",
+    longText: "3 text placeholder text placeholder text placeholder text placeholder text placeholder",
   }
 ]
 //----------------------------------------------------------------------------------------------------
 
-const people = [
-  {
-    url: "placeholders/500x500.jpg"
-  },
-  {
-    url: "placeholders/500x500.jpg"
-  },
-  {
-    url: "placeholders/500x500.jpg"
-  },
-  {
-    url: "placeholders/500x500.jpg"
-  },
-  {
-    url: "placeholders/500x500.jpg"
-  },
-  {
-    url: "placeholders/500x500.jpg"
-  },
-  {
-    url: "placeholders/500x500.jpg"
-  },
-  {
-    url: "placeholders/500x500.jpg"
-  },
-]
 
 export default class Team extends Component {
   render() {
@@ -68,9 +48,9 @@ export default class Team extends Component {
         </Typography>
         <Hidden  mdDown>
           <Grid container justify="center" spacing={1} direction="row">
-            {people.map( (x) => 
+            {persons.map( (x) => 
             <Grid item xs={1}>
-              <Image src={x.url} />
+              <Image src={x.imageURL} />
             </Grid>
             )}
           </Grid>
