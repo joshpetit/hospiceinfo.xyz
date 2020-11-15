@@ -62,7 +62,7 @@ export default class Team extends Component<{}, State> {
           <Grid container justify="center" spacing={10} direction="row">
             {persons.map((person, key) => (
               <Grid key={key} onMouseEnter={() => this.setHighlight(person)} item>
-                <img src={person.imageURL} />
+                <img alt={person.name} src={person.imageURL} />
               </Grid>
             ))}
           </Grid>
@@ -81,7 +81,7 @@ export default class Team extends Component<{}, State> {
               >
                 <Grid item xs={12} sm={5} md={3}>
                   <Box padding={0.5} m={2} boxShadow={5} bgcolor={red[200]}>
-                    <Image color="transparent" src={person.imageURL + ".pt"} />
+                    <Image alt={person.name} color="transparent" src={person.imageURL + ".pt"} />
                   </Box>
                 </Grid>
                 <Grid item xs={12} md={8}>
