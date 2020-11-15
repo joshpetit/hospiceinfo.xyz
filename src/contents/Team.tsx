@@ -61,7 +61,7 @@ export default class Team extends Component {
               <Grid style={{marginTop: '1em'}} container spacing={1} direction="row">
                 <Grid item xs={12} md={3} spacing={1}>
                   <Box padding={.5} m={2} boxShadow={5} bgcolor={red[200]}>
-                    <Image src={person.imageURL + ".pt"} />
+                    <Image color='transparent' src={person.imageURL + ".pt"} />
                   </Box>
                 </Grid>
                 <Grid item xs={12} md={8} spacing={1}>
