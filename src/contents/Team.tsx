@@ -45,7 +45,6 @@ export default class Team extends Component<{}, State> {
     this.state = {
       person: persons[0],
     };
-    console.log(this.state.person);
   }
   setHighlight = (person: Person) => {
     this.setState({
@@ -71,12 +70,13 @@ export default class Team extends Component<{}, State> {
 
         <Container maxWidth="lg">
           <Grid style={{ marginTop: "2em" }} container justify="center">
-            {persons.map((person) => (
+            {persons.map((person, key) => (
               // nthchild(odd) column-reverse
               <Grid
+                container
+                key={key}
                 justify="center"
                 style={{ marginTop: "1em" }}
-                container
                 direction="row"
               >
                 <Grid item xs={12} sm={5} md={3}>
