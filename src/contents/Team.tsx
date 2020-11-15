@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { Component } from "react";
 import { Hidden, Grid, Box, Container, Typography } from "@material-ui/core";
 import { red } from '@material-ui/core/colors';
 import Image from "material-ui-image";
+import './Team.css';
 
 
 interface Person {
@@ -34,9 +35,17 @@ const persons: Person[] = [
     longText:
       "3 text placeholder text placeholder text placeholder text placeholder text placeholder",
   },
+  {
+    name: "4 First Last",
+    imageURL: "placeholders/person.png",
+    shortText: "4 text placeholder string string string",
+    longText:
+      "4 text placeholder text placeholder text placeholder text placeholder text placeholder",
+  },
 ];
-
+let order:string = "row-reverse";
 export default class Team extends Component {
+  // const [order:string, setOrder:string] = useState("row-reverse");
   render() {
     return (
       <Container maxWidth="xl">
@@ -57,20 +66,19 @@ export default class Team extends Component {
         <Container maxWidth="lg">
           <Grid style={{marginTop: '2em'}}container justify="center">
             {persons.map((person) => (
-              // nthchild(odd) column-reverse
-              <Grid justify="center" style={{marginTop: '1em'}} container spacing={1} direction="row">
+              <Box className="person-container" padding={2} m={2} boxShadow={8} height="auto" width="100%">
                 <Grid item xs={12} sm={5} md={3} spacing={1}>
-                  <Box padding={.5} m={2} boxShadow={5} bgcolor={red[200]}>
+                  <Box padding={.5} m={2} boxShadow={0} bgcolor={red[200]}>
                     <Image color='transparent' src={person.imageURL + ".pt"} />
                   </Box>
                 </Grid>
-                <Grid item xs={12} md={8} spacing={1}>
-                  <Box padding={2} m={2} boxShadow={8} height="75%">
+                <Grid item xs={12} md={9} spacing={1}>
+                  <Box padding={2} m={2} boxShadow={0} height="75%">
                     <p>{person.name}</p>
                     <p>{person.longText}</p>
                   </Box>
                 </Grid>
-              </Grid>
+              </Box>
             ))}
           </Grid>
         </Container>
