@@ -1,6 +1,7 @@
 import React from "react";
 import { Component } from "react";
 import { Hidden, Grid, Box, Container, Typography } from "@material-ui/core";
+import { red } from '@material-ui/core/colors';
 import Image from "material-ui-image";
 
 
@@ -59,12 +60,9 @@ export default class Team extends Component {
               // nthchild(odd) column-reverse
               <Grid style={{marginTop: '1em'}} container spacing={1} direction="row">
                 <Grid item xs={12} md={3} spacing={1}>
-                  {
-                    // Since the vertical images look so squished
-                    // we can create special crops and add a
-                    // .pt extension
-                  }
-                  <Image src={person.imageURL + ".pt"} />
+                  <Box padding={.5} mr={3} ml={3} boxShadow={5} bgcolor={red[200]}>
+                    <Image src={person.imageURL + ".pt"} />
+                  </Box>
                 </Grid>
                 <Grid item xs={12} md={8} spacing={1}>
                   <p>{person.name}</p>
