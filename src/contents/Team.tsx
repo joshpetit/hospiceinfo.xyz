@@ -1,10 +1,9 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Component } from "react";
 import { Hidden, Grid, Box, Container, Typography } from "@material-ui/core";
-import { red } from '@material-ui/core/colors';
+import { red } from "@material-ui/core/colors";
 import Image from "material-ui-image";
-import './Team.css';
-
+import "./Team.css";
 
 interface Person {
   name: string;
@@ -43,36 +42,65 @@ const persons: Person[] = [
       "4 text placeholder text placeholder text placeholder text placeholder text placeholder",
   },
 ];
-let order:string = "row-reverse";
-export default class Team extends Component {
-  // const [order:string, setOrder:string] = useState("row-reverse");
+
+interface State {
+  person: Person;
+}
+
+export default class Team extends Component<{}, State> {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      person: persons[0],
+    };
+  }
+  setHighlight = (person: Person) => {
+    this.setState({
+      person: person,
+    });
+  };
+
   render() {
     return (
       <Container maxWidth="xl">
         <Typography color="primary" variant="h2" align="center">
           Meet The Team
         </Typography>
-        <Hidden mdDown>
+        <Hidden smDown>
           <Grid container justify="center" spacing={10} direction="row">
-            {persons.map((x) => (
-              <Grid 
-                item>
-                <img src={x.imageURL} />
+            {persons.map((person, key) => (
+              <Grid
+                key={key}
+                onMouseEnter={() => this.setHighlight(person)}
+                item
+              >
+                <img alt={person.name} src={person.imageURL} />
               </Grid>
             ))}
           </Grid>
         </Hidden>
 
         <Container maxWidth="lg">
-          <Grid style={{marginTop: '2em'}}container justify="center">
+          <Grid style={{ marginTop: "2em" }} container justify="center">
             {persons.map((person) => (
-              <Box className="person-container" padding={2} m={2} boxShadow={8} height="auto" width="100%">
-                <Grid item xs={12} sm={5} md={3} spacing={1}>
-                  <Box padding={.5} m={2} boxShadow={0} bgcolor={red[200]}>
-                    <Image color='transparent' src={person.imageURL + ".pt"} />
+              <Box
+                className="person-container"
+                padding={2}
+                m={2}
+                boxShadow={8}
+                height="auto"
+                width="100%"
+              >
+                <Grid justify="center" item xs={12} sm={5} md={3} spacing={1}>
+                  <Box padding={0.5} m={2} boxShadow={5} bgcolor={red[200]}>
+                    <Image
+                      alt={person.name}
+                      color="transparent"
+                      src={person.imageURL + ".pt"}
+                    />
                   </Box>
                 </Grid>
-                <Grid item xs={12} md={9} spacing={1}>
+                <Grid item xs={12} md={9}>
                   <Box padding={2} m={2} boxShadow={0} height="75%">
                     <p>{person.name}</p>
                     <p>{person.longText}</p>
