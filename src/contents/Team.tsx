@@ -77,15 +77,14 @@ export default class Team extends Component<{}, State> {
                 justify="center"
                 style={{ marginTop: "1em" }}
                 container
-                spacing={1}
                 direction="row"
               >
-                <Grid item xs={12} sm={5} md={3} spacing={1}>
+                <Grid item xs={12} sm={5} md={3}>
                   <Box padding={0.5} m={2} boxShadow={5} bgcolor={red[200]}>
                     <Image color="transparent" src={person.imageURL + ".pt"} />
                   </Box>
                 </Grid>
-                <Grid item xs={12} md={8} spacing={1}>
+                <Grid item xs={12} md={8}>
                   <Box padding={2} m={2} boxShadow={8} height="75%">
                     <p>{person.name}</p>
                     <p>{person.longText}</p>
