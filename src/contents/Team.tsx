@@ -1,9 +1,8 @@
 import React from "react";
 import { Component } from "react";
 import { Hidden, Grid, Box, Container, Typography } from "@material-ui/core";
-import { red } from '@material-ui/core/colors';
+import { red } from "@material-ui/core/colors";
 import Image from "material-ui-image";
-
 
 interface Person {
   name: string;
@@ -36,7 +35,23 @@ const persons: Person[] = [
   },
 ];
 
-export default class Team extends Component {
+interface State {
+  person: Person;
+}
+
+export default class Team extends Component<{}, State> {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      person: persons[0],
+    };
+    console.log(this.state.person);
+  }
+  setHighlight = (person: Person) => {
+    this.setState({
+      person: person,
+    });
+  };
   render() {
     return (
       <Container maxWidth="xl">
@@ -45,9 +60,8 @@ export default class Team extends Component {
         </Typography>
         <Hidden mdDown>
           <Grid container justify="center" spacing={10} direction="row">
-            {persons.map((x) => (
-              <Grid 
-                item>
+            {persons.map((x, key) => (
+              <Grid key={key} onMouseEnter={() => this.setHighlight(x)} item>
                 <img src={x.imageURL} />
               </Grid>
             ))}
@@ -55,13 +69,19 @@ export default class Team extends Component {
         </Hidden>
 
         <Container maxWidth="lg">
-          <Grid style={{marginTop: '2em'}}container justify="center">
+          <Grid style={{ marginTop: "2em" }} container justify="center">
             {persons.map((person) => (
               // nthchild(odd) column-reverse
-              <Grid justify="center" style={{marginTop: '1em'}} container spacing={1} direction="row">
+              <Grid
+                justify="center"
+                style={{ marginTop: "1em" }}
+                container
+                spacing={1}
+                direction="row"
+              >
                 <Grid item xs={12} sm={5} md={3} spacing={1}>
-                  <Box padding={.5} m={2} boxShadow={5} bgcolor={red[200]}>
-                    <Image color='transparent' src={person.imageURL + ".pt"} />
+                  <Box padding={0.5} m={2} boxShadow={5} bgcolor={red[200]}>
+                    <Image color="transparent" src={person.imageURL + ".pt"} />
                   </Box>
                 </Grid>
                 <Grid item xs={12} md={8} spacing={1}>
