@@ -52,17 +52,18 @@ export default class Team extends Component<{}, State> {
       person: person,
     });
   };
+
   render() {
     return (
       <Container maxWidth="xl">
         <Typography color="primary" variant="h2" align="center">
           Meet The Team
         </Typography>
-        <Hidden mdDown>
+        <Hidden smDown>
           <Grid container justify="center" spacing={10} direction="row">
-            {persons.map((x, key) => (
-              <Grid key={key} onMouseEnter={() => this.setHighlight(x)} item>
-                <img src={x.imageURL} />
+            {persons.map((person, key) => (
+              <Grid key={key} onMouseEnter={() => this.setHighlight(person)} item>
+                <img src={person.imageURL} />
               </Grid>
             ))}
           </Grid>
