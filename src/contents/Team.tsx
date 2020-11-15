@@ -58,8 +58,8 @@ export default class Team extends Component {
           <Grid style={{marginTop: '2em'}}container justify="center">
             {persons.map((person) => (
               // nthchild(odd) column-reverse
-              <Grid style={{marginTop: '1em'}} container spacing={1} direction="row">
-                <Grid item xs={12} md={3} spacing={1}>
+              <Grid justify="center" style={{marginTop: '1em'}} container spacing={1} direction="row">
+                <Grid item xs={12} sm={5} md={3} spacing={1}>
                   <Box padding={.5} m={2} boxShadow={5} bgcolor={red[200]}>
                     <Image color='transparent' src={person.imageURL + ".pt"} />
                   </Box>
