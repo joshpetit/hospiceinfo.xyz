@@ -78,6 +78,14 @@ export default class Team extends Component<{}, State> {
               </Grid>
             ))}
           </Grid>
+          <Container maxWidth="lg">
+          <Grid justify="center" item >
+            <Box padding={2} m={2} boxShadow={5}>
+              <Typography variant='h4' color='primary' align="center">{this.state.person.name}</Typography>
+              <Typography align="center">{this.state.person.shortText}</Typography>
+            </Box>
+          </Grid>
+          </Container>
         </Hidden>
 
         <Container maxWidth="lg">
