@@ -4,6 +4,7 @@ import { Tooltip, Hidden, Grid, Box, Container, Typography } from "@material-ui/
 import { red } from "@material-ui/core/colors";
 import Image from "material-ui-image";
 import "./Team.css";
+import persons from "./people.json" 
 
 interface Person {
   name: string;
@@ -11,37 +12,6 @@ interface Person {
   shortText: string;
   longText: string;
 }
-
-const persons: Person[] = [
-  {
-    name: "First Last",
-    imageURL: "placeholders/person.png",
-    shortText: "text placeholder string string string",
-    longText:
-      "text placeholder text placeholder text placeholder text placeholder text placeholder",
-  },
-  {
-    name: "2 First Last",
-    imageURL: "placeholders/person.png",
-    shortText: "2 text placeholder string string string",
-    longText:
-      "2 text placeholder text placeholder text placeholder text placeholder text placeholder",
-  },
-  {
-    name: "3 First Last",
-    imageURL: "placeholders/person.png",
-    shortText: "3 text placeholder string string string",
-    longText:
-      "3 text placeholder text placeholder text placeholder text placeholder text placeholder",
-  },
-  {
-    name: "4 First Last",
-    imageURL: "placeholders/person.png",
-    shortText: "4 text placeholder string string string",
-    longText:
-      "4 text placeholder text placeholder text placeholder text placeholder text placeholder",
-  },
-];
 
 interface State {
   person: Person;
