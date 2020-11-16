@@ -21,21 +21,21 @@
       "The aid typically visits to do personal care tasks such as bathing and or grooming.  Their stay is typically an hour or two."
   },
   {
-    "name": "A Social Worker",
+    "name": "Social Worker",
     "imageURL": "placeholders/person.png",
     "shortText": "Speaks to the family and person receiving hospice about family issue.  Helps in finding services such as food delivery",
     "longText":
       "The social worker helps with logisitics and side issues. They also help in planning for the future and coordinating care schedules."
   },
   {
-    "name": "A chaplain",
+    "name": "Chaplain",
     "imageURL": "placeholders/person.png",
     "shortText": "Provides spiritual support, they are for people of any faith.",
     "longText":
       "Chaplains help organize religious rites that someone requests and getting them in contact with another of their own faith tradition. Chaplains can also be very good counselors to speak about issues to."
   },
   {
-    "name": "A Volunteer",
+    "name": "Volunteer",
     "imageURL": "placeholders/person.png",
     "shortText": "Assists with groceries, gardening, or other small tasks",
     "longText":
@@ -49,7 +49,7 @@
       "Therapists range from physical therapists, dieticians, speech-lanague pathologists and other services."
   },
   {
-    "name": "A Grief Counselor",
+    "name": "Grief Counselor",
     "imageURL": "placeholders/person.png",
     "shortText": "Provides emotional and psychological care",
     "longText":
