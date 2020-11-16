@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Component } from "react";
-import { Hidden, Grid, Box, Container, Typography } from "@material-ui/core";
+import { Tooltip, Hidden, Grid, Box, Container, Typography } from "@material-ui/core";
 import { red } from "@material-ui/core/colors";
 import Image from "material-ui-image";
 import "./Team.css";
@@ -74,7 +74,9 @@ export default class Team extends Component<{}, State> {
                 onMouseEnter={() => this.setHighlight(person)}
                 item
               >
+                <Tooltip placement="top" title={person.name}>
                 <img alt={person.name} src={person.imageURL} />
+              </Tooltip>
               </Grid>
             ))}
           </Grid>
