@@ -31,6 +31,7 @@ export default class Team extends Component<{}, State> {
   };
 
   render() {
+    // Be pretty cool to have the short information panel in the middle of all the people, splitting the rows
     return (
       <Container maxWidth="xl">
         <Typography color="primary" variant="h2" align="center">
