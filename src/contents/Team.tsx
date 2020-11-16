@@ -83,7 +83,7 @@ export default class Team extends Component<{}, State> {
                 <Grid item xs={12} md={9}>
                   <Box padding={2} m={2} boxShadow={0} height="75%">
                     <Typography variant='h4' color='primary' >{person.name}</Typography>
-                    <Typography>{person.shortText}</Typography>
+                    <Typography>{person.longText}</Typography>
                   </Box>
                 </Grid>
               </Box>
