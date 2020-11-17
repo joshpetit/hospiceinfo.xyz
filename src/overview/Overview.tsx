@@ -16,11 +16,13 @@ let cards = [
     title: "What is Hospice?",
     text:
       "A general overview of what hospice is, what it isn't, its benefits, and who can receive it",
+    link: "#hospice-info"
   },
   {
     title: "Meet The Team",
     text:
       "Meet the members of a typical hospice team and see their role in helping you",
+    link:"#meet-team"
   },
 ];
 
@@ -50,38 +52,25 @@ export default class Overview extends Component {
             alignItems="center"
           >
             {cards.map((x, key) => (
-              <CardTem key={key} title={x.title} text={x.text} />
+            <Grid item xs={12} lg={4}>
+              <Card raised={true} style={styles.card}>
+                <CardContent style={{ color: "black" }}>
+                  <Typography align="center" variant="h4">
+                    {x.title}
+                  </Typography>
+                  <Typography paragraph={true} variant="body1" align="center">
+                    {x.text}
+                  </Typography>
+                  <Box textAlign="center">
+                    <Button style={styles.button}>Click Here</Button>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
             ))}
           </Grid>
         </Box>
       </Container>
-    );
-  }
-}
-
-interface CardItems {
-  title: string;
-  text: string;
-}
-
-class CardTem extends Component<CardItems> {
-  render() {
-    return (
-      <Grid item xs={12} lg={4}>
-        <Card raised={true} style={styles.card}>
-          <CardContent style={{ color: "black" }}>
-            <Typography align="center" variant="h4">
-              {this.props.title}
-            </Typography>
-            <Typography paragraph={true} variant="body1" align="center">
-              {this.props.text}
-            </Typography>
-            <Box textAlign="center">
-              <Button style={styles.button}>Click Here</Button>
-            </Box>
-          </CardContent>
-        </Card>
-      </Grid>
     );
   }
 }
