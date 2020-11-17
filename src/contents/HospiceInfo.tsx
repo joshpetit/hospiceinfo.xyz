@@ -3,24 +3,7 @@ import { grey, red } from "@material-ui/core/colors/";
 import React from "react";
 import { Component } from "react";
 import Image from "material-ui-image";
-
-let sections = [
-  {
-    title: "General",
-    text: "Text and Text and Text and Text",
-    imageURL: "placeholders/500x500.jpg",
-  },
-  {
-    title: "General",
-    text: "Text and Text and Text and Text",
-    imageURL: "placeholders/500x500.jpg",
-  },
-  {
-    title: "General",
-    text: "Text and Text and Text and Text",
-    imageURL: "placeholders/500x500.jpg",
-  },
-];
+import sections from "./hospiceinfo.json"
 
 export default class HospiceInfo extends Component {
   render() {
@@ -74,7 +57,7 @@ class InfoSection extends Component<Info> {
           <Typography variant="h4">{this.props.title}</Typography>
           <Grid container justify="center" spacing={2} direction="row">
             <Grid item xs={12} lg={8}>
-              <Typography variant="body1">{this.props.text}</Typography>
+              <Typography dangerouslySetInnerHTML={{__html:this.props.text }} variant="body1"/ >
             </Grid>
             <Grid item xs={12} sm={6} md={5} lg={4}>
               <Image 
