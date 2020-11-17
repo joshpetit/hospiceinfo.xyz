@@ -34,7 +34,7 @@ export default class Team extends Component<{}, State> {
     // Be pretty cool to have the short information panel in the middle of all the people, splitting the rows
     return (
       <Container maxWidth="xl">
-        <Typography color="primary" variant="h2" align="center">
+        <Typography id="meet-team" color="primary" variant="h2" align="center">
           Meet The Team
         </Typography>
         <Hidden smDown>

@@ -15,7 +15,7 @@ export default class HospiceInfo extends Component {
         }}
         maxWidth="xl"
       >
-        <Typography color="primary" align="center" variant="h2">
+        <Typography id="hospice-info" color="primary" align="center" variant="h2">
           What is Hospice?
         </Typography>
         {sections.map((x, key) => (

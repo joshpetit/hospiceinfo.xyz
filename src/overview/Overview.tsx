@@ -62,7 +62,7 @@ export default class Overview extends Component {
                     {x.text}
                   </Typography>
                   <Box textAlign="center">
-                    <Button style={styles.button}>Click Here</Button>
+                    <Button href={x.link} style={styles.button}>Click Here</Button>
                   </Box>
                 </CardContent>
               </Card>
