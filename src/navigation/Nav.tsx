@@ -3,7 +3,6 @@ import {
   Link,
   makeStyles,
   Button,
-  Icon,
   IconButton,
   AppBar,
   Toolbar,

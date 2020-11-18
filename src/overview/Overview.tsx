@@ -52,7 +52,7 @@ export default class Overview extends Component {
             alignItems="center"
           >
             {cards.map((x, key) => (
-              <Grid item xs={12} lg={4}>
+              <Grid key={key} item xs={12} lg={4}>
                 <Card raised={true} style={styles.card}>
                   <CardContent style={{ color: "black" }}>
                     <Typography align="center" variant="h4">
