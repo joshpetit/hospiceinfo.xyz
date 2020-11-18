@@ -9,6 +9,13 @@ import Team from "./contents/Team";
 
 export const theme = createMuiTheme({
   typography: {
+    fontFamily: [
+      'Arial',
+      'Nunito',
+      'Roboto',
+      '"Helvetica Neue"',
+      'sans-serif'
+    ].join(','),
     h4: {
       fontSize: "2.5rem",
     },
