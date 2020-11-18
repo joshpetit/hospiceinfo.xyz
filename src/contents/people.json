@@ -2,13 +2,13 @@
   {
     "name": "Hospice Doctor",
     "imageURL": "placeholders/person.png",
-    "shortText": "The Hospice Doctor oversees care and prescribes medication for pain",
-    "longText": "The hospice doctor can be your primary care physician or possibly the Hospice medical director"
+    "shortText": "The Hospice Doctor oversees care and prescribes medication for pain.",
+    "longText": "The hospice doctor can be your primary care physician or possibly the Hospice medical director."
   },
   {
     "name": "Nurse",
     "imageURL": "placeholders/person.png",
-    "shortText": " This nurse visits at least every two weeks to manage your symptoms and then meets with the doctor an overseer to refine treatments.",
+    "shortText": "Visits at least every two weeks to manage symptoms and refine treatments.",
     "longText": "Nurses visit based on based on someone's need and are typically the case managers, that is someone who coordinates much of what is needed."
   },
   {
@@ -20,7 +20,7 @@
   {
     "name": "Social Worker",
     "imageURL": "placeholders/person.png",
-    "shortText": "Speaks to the family and person receiving hospice about family issue.  Helps in finding services such as food delivery",
+    "shortText": "Speaks to the family and person receiving hospice about family issue.",
     "longText": "The social worker helps with logisitics and side issues. They also help in planning for the future and coordinating care schedules."
   },
   {
@@ -32,8 +32,8 @@
   {
     "name": "Volunteer",
     "imageURL": "placeholders/person.png",
-    "shortText": "Assists with groceries, gardening, or other small tasks",
-    "longText": "Volunteers can be requested to help with tasks such as shopping, gardening or keeping watch of the person signed onto hospice while the caregiver is away"
+    "shortText": "Assists with groceries, gardening, or other small tasks.",
+    "longText": "Volunteers can be requested to help with tasks such as shopping, gardening or keeping watch of the person signed onto hospice while the caregiver is away."
   },
   {
     "name": "Therapist",
@@ -44,7 +44,7 @@
   {
     "name": "Grief Counselor",
     "imageURL": "placeholders/person.png",
-    "shortText": "Provides emotional and psychological care",
+    "shortText": "Provides emotional and psychological care.",
     "longText": "Grief Counselors prove care to both the person signed onto hospice, their family members, and their loved ones who may be dealing with issues of grief.  This service is given during and after the time of hospice."
   }
 ]
