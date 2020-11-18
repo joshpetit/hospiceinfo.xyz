@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Link,
   makeStyles,
   Button,
   Icon,
@@ -24,13 +25,21 @@ const useStyles = makeStyles((theme) => ({
 export default function Nav() {
   const classes = useStyles();
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Toolbar>
         <IconButton className={classes.menuButton} edge="start">
-          <Icon>menu</Icon>
         </IconButton>
+        <Button
+          color="secondary"
+          variant="contained"
+          style={{
+            fontSize: "1rem",
+          }}
+        >
+          <Link href='#hospice-info'>Info</Link>
+        </Button>
         <Typography className={classes.title} align="center" variant="h5">
-          Hospice.xyz
+          HospiceInfo.xyz
         </Typography>
 
         <Button
@@ -40,7 +49,7 @@ export default function Nav() {
             fontSize: "1rem",
           }}
         >
-          About
+          <Link href='#meet-team'>Team</Link>
         </Button>
       </Toolbar>
     </AppBar>
