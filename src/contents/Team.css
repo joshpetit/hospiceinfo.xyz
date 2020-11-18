@@ -7,6 +7,11 @@
   flex-direction: row-reverse;
 }
 
+
+img:hover {
+  opacity: .8;
+}
+
 @media screen and (max-width: 700px) {
   .person-container {
     display: flex;
