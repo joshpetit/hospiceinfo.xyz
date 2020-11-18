@@ -61,7 +61,7 @@ export default class Team extends Component<{}, State> {
             ))}
           </Grid>
           <Container maxWidth="lg">
-            <Grid justify="center" item>
+            <Grid item>
               <Box padding={2} m={2} boxShadow={5}>
                 <Typography variant="h4" color="primary" align="center">
                   {this.state.person.name}
@@ -76,8 +76,9 @@ export default class Team extends Component<{}, State> {
 
         <Container maxWidth="lg">
           <Grid style={{ marginTop: "2em" }} container justify="center">
-            {persons.map((person) => (
+            {persons.map((person, key) => (
               <Box
+                key={key}
                 className="person-container"
                 padding={2}
                 m={2}
@@ -85,7 +86,7 @@ export default class Team extends Component<{}, State> {
                 height="auto"
                 width="100%"
               >
-                <Grid justify="center" item xs={12} sm={5} md={3} spacing={1}>
+                <Grid item xs={12} sm={5} md={3} >
                   <Box padding={0.5} m={2} boxShadow={5} bgcolor={red[200]}>
                     <Image
                       className={"bright"}
