@@ -45,7 +45,7 @@ export default class Team extends Component<{}, State> {
           Meet The Team
         </Typography>
         <Hidden smDown>
-          <Grid container justify="center" spacing={10} direction="row">
+          <Grid container justify="center" spacing={5} direction="row">
             {persons.map((person, key) => (
               <Grid
                 key={key}
@@ -53,7 +53,7 @@ export default class Team extends Component<{}, State> {
                 item
               >
                 <Tooltip placement="top" title={person.name}>
-                  <img alt={person.name} src={person.imageURL} />
+                  <img height={400} alt={person.name} src={person.imageURL} />
                 </Tooltip>
               </Grid>
             ))}
