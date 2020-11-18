@@ -47,7 +47,7 @@ export default class Team extends Component<{}, State> {
           </Typography>
         </Box>
         <Hidden smDown>
-          <Grid container justify="center" spacing={5} direction="row">
+          <Grid container justify="center" spacing={2} direction="row">
             {persons.map((person, key) => (
               <Grid
                 key={key}
