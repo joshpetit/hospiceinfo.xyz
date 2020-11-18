@@ -3,57 +3,48 @@
     "name": "Hospice Doctor",
     "imageURL": "placeholders/person.png",
     "shortText": "The Hospice Doctor oversees care and prescribes medication for pain",
-    "longText":
-      "The hospice doctor can be your primary care physician or possibly the Hospice medical director"
+    "longText": "The hospice doctor can be your primary care physician or possibly the Hospice medical director"
   },
   {
     "name": "Nurse",
     "imageURL": "placeholders/person.png",
     "shortText": " This nurse visits at least every two weeks to manage your symptoms and then meets with the doctor an overseer to refine treatments.",
-    "longText":
-      "Nurses visit based on based on someone's need and are typically the case managers, that is someone who coordinates much of what is needed."
+    "longText": "Nurses visit based on based on someone's need and are typically the case managers, that is someone who coordinates much of what is needed."
   },
   {
     "name": "Aide",
     "imageURL": "placeholders/person.png",
     "shortText": "Visits several days a week to help with basic home tasks.",
-    "longText":
-      "The aid typically visits to do personal care tasks such as bathing and or grooming.  Their stay is typically an hour or two."
+    "longText": "The aid typically visits to do personal care tasks such as bathing and or grooming.  Their stay is typically an hour or two."
   },
   {
     "name": "Social Worker",
     "imageURL": "placeholders/person.png",
     "shortText": "Speaks to the family and person receiving hospice about family issue.  Helps in finding services such as food delivery",
-    "longText":
-      "The social worker helps with logisitics and side issues. They also help in planning for the future and coordinating care schedules."
+    "longText": "The social worker helps with logisitics and side issues. They also help in planning for the future and coordinating care schedules."
   },
   {
     "name": "Chaplain",
     "imageURL": "placeholders/person.png",
     "shortText": "Provides spiritual support, they are for people of any faith.",
-    "longText":
-      "Chaplains help organize religious rites that someone requests and getting them in contact with another of their own faith tradition. Chaplains can also be very good counselors to speak about issues to."
+    "longText": "Chaplains help organize religious rites that someone requests and getting them in contact with another of their own faith tradition. Chaplains can also be very good counselors to speak about issues to."
   },
   {
     "name": "Volunteer",
     "imageURL": "placeholders/person.png",
     "shortText": "Assists with groceries, gardening, or other small tasks",
-    "longText":
-      "Volunteers can be requested to help with tasks such as shopping, gardening or keeping watch of the person signed onto hospice while the caregiver is away"
+    "longText": "Volunteers can be requested to help with tasks such as shopping, gardening or keeping watch of the person signed onto hospice while the caregiver is away"
   },
   {
     "name": "Therapist",
     "imageURL": "placeholders/person.png",
     "shortText": "Someone on hospice receives help from a variety of therapists.",
-    "longText":
-      "Therapists range from physical therapists, dieticians, speech-lanague pathologists and other services."
+    "longText": "Therapists range from physical therapists, dieticians, speech-lanague pathologists and other services."
   },
   {
     "name": "Grief Counselor",
     "imageURL": "placeholders/person.png",
     "shortText": "Provides emotional and psychological care",
-    "longText":
-      "Grief Counselors prove care to both the person signed onto hospice, their family members, and their loved ones who may be dealing with issues of grief.  This service is given during and after the time of hospice."
+    "longText": "Grief Counselors prove care to both the person signed onto hospice, their family members, and their loved ones who may be dealing with issues of grief.  This service is given during and after the time of hospice."
   }
 ]
-

@@ -1,10 +1,17 @@
 import React from "react";
 import { Component } from "react";
-import { Tooltip, Hidden, Grid, Box, Container, Typography } from "@material-ui/core";
+import {
+  Tooltip,
+  Hidden,
+  Grid,
+  Box,
+  Container,
+  Typography,
+} from "@material-ui/core";
 import { red } from "@material-ui/core/colors";
 import Image from "material-ui-image";
 import "./Team.css";
-import persons from "./people.json" 
+import persons from "./people.json";
 
 interface Person {
   name: string;
@@ -46,18 +53,22 @@ export default class Team extends Component<{}, State> {
                 item
               >
                 <Tooltip placement="top" title={person.name}>
-                <img alt={person.name} src={person.imageURL} />
-              </Tooltip>
+                  <img alt={person.name} src={person.imageURL} />
+                </Tooltip>
               </Grid>
             ))}
           </Grid>
           <Container maxWidth="lg">
-          <Grid justify="center" item >
-            <Box padding={2} m={2} boxShadow={5}>
-              <Typography variant='h4' color='primary' align="center">{this.state.person.name}</Typography>
-              <Typography align="center">{this.state.person.shortText}</Typography>
-            </Box>
-          </Grid>
+            <Grid justify="center" item>
+              <Box padding={2} m={2} boxShadow={5}>
+                <Typography variant="h4" color="primary" align="center">
+                  {this.state.person.name}
+                </Typography>
+                <Typography align="center">
+                  {this.state.person.shortText}
+                </Typography>
+              </Box>
+            </Grid>
           </Container>
         </Hidden>
 
@@ -83,7 +94,9 @@ export default class Team extends Component<{}, State> {
                 </Grid>
                 <Grid item xs={12} md={9}>
                   <Box padding={2} m={2} boxShadow={0} height="75%">
-                    <Typography variant='h4' color='primary' >{person.name}</Typography>
+                    <Typography variant="h4" color="primary">
+                      {person.name}
+                    </Typography>
                     <Typography>{person.longText}</Typography>
                   </Box>
                 </Grid>

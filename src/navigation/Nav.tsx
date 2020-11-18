@@ -29,13 +29,19 @@ export default function Nav() {
         <IconButton className={classes.menuButton} edge="start">
           <Icon>menu</Icon>
         </IconButton>
-        <Typography className={classes.title} align='center' variant="h5">
+        <Typography className={classes.title} align="center" variant="h5">
           Hospice.xyz
         </Typography>
 
-        <Button color="secondary" variant='contained' style= {{ 
-          fontSize: '1rem'
-        }}>About</Button>
+        <Button
+          color="secondary"
+          variant="contained"
+          style={{
+            fontSize: "1rem",
+          }}
+        >
+          About
+        </Button>
       </Toolbar>
     </AppBar>
   );
