@@ -41,9 +41,11 @@ export default class Team extends Component<{}, State> {
     // Be pretty cool to have the short information panel in the middle of all the people, splitting the rows
     return (
       <Container maxWidth="xl">
-        <Typography id="meet-team" color="primary" variant="h2" align="center">
-          Meet The Team
-        </Typography>
+        <Box mb={2}>
+          <Typography id="meet-team" color="primary" variant="h2" align="center">
+            Meet The Team
+          </Typography>
+        </Box>
         <Hidden smDown>
           <Grid container justify="center" spacing={5} direction="row">
             {persons.map((person, key) => (
@@ -53,7 +55,7 @@ export default class Team extends Component<{}, State> {
                 item
               >
                 <Tooltip placement="top" title={person.name}>
-                  <img height={400} alt={person.name} src={person.imageURL} />
+                  <img className={"bright"} height={400} alt={person.name} src={person.imageURL} />
                 </Tooltip>
               </Grid>
             ))}
@@ -86,6 +88,7 @@ export default class Team extends Component<{}, State> {
                 <Grid justify="center" item xs={12} sm={5} md={3} spacing={1}>
                   <Box padding={0.5} m={2} boxShadow={5} bgcolor={red[200]}>
                     <Image
+                      className={"bright"}
                       alt={person.name}
                       color="transparent"
                       src={person.imageURL + ".pt"}
