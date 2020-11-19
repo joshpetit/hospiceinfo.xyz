@@ -60,7 +60,7 @@ class InfoSection extends Component<Info> {
           bgcolor={this.props.index % 2 === 1 ? red[100] : grey[100]}
         >
           <Typography variant="h4">{this.props.title}</Typography>
-          <Grid container justify="center" spacing={2} direction="row">
+          <Grid container justify="center" direction="row">
             <Grid item xs={12} lg={8}>
               <Typography
                 dangerouslySetInnerHTML={{ __html: this.props.text }}
