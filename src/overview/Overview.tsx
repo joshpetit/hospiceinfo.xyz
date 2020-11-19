@@ -12,7 +12,6 @@ import {
   CardContent,
 } from "@material-ui/core";
 import { grey, red } from "@material-ui/core/colors/";
-import Image from 'material-ui-image'
 
 let cards = [
   {
@@ -71,7 +70,7 @@ export default class Overview extends Component {
                         <Hidden smDown>
                           <Link href={x.link}>
                             <Grid item xs={12}>
-                              <img height={250} src={x.imageURL} />
+                              <img alt="Small logo" height={250} src={x.imageURL} />
                             </Grid>
                           </Link>
                         </Hidden>
