@@ -41,7 +41,7 @@ interface Info {
   index: number;
   title: string;
   text: string;
-  imageURL: string;
+  imageURL?: string;
 }
 
 class InfoSection extends Component<Info> {
@@ -60,16 +60,18 @@ class InfoSection extends Component<Info> {
           bgcolor={this.props.index % 2 === 1 ? red[100] : grey[100]}
         >
           <Typography variant="h4">{this.props.title}</Typography>
-          <Grid container justify="center" spacing={2} direction="row">
-            <Grid item xs={12} lg={8}>
+          <Grid container justify="center" direction="row">
+            <Grid item xs={12} lg={this.props.imageURL ? 8 : 12}>
               <Typography
                 dangerouslySetInnerHTML={{ __html: this.props.text }}
                 variant="body1"
               />
             </Grid>
-            <Grid item xs={12} sm={6} md={5} lg={4}>
-              <Image color={"transparent"} src={this.props.imageURL} />
-            </Grid>
+              { this.props.imageURL &&
+              <Grid item xs={12} sm={6} md={5} lg={4}>
+                <Image color={"transparent"} src={this.props.imageURL} />
+              </Grid>
+              }
           </Grid>
         </Box>
       </Container>
