@@ -1,27 +1,24 @@
 [
   {
     "title": "What is hospice?",
-    "text": " \"Medical care to help someone with a terminal illness live as well as possible for as long as possible, increasing quality of life.\" <a href='https://hospicefoundation.org/Hospice-Care/Hospice-Services'>[1]</a><br/> <br /> Hospice is a service intended to help someone live comfortably after a terminal diagnosis. The goal is to manage the symptoms related to the illness to increase the overall quality of life. All treatments come to the person signed onto hospice and they receive resources to help improve their quality of life while at home.  ",
-    "imageURL": "placeholders/500x500.jpg"
+    "text": " \"Medical care to help someone with a terminal illness live as well as possible for as long as possible, increasing quality of life.\" <a href='https://hospicefoundation.org/Hospice-Care/Hospice-Services'>[1]</a><br/> <br /> Hospice is a service intended to help someone live comfortably after a terminal diagnosis. The goal is to manage the symptoms related to the illness to increase the overall quality of life. All treatments come to the person signed onto hospice and they receive resources to help improve their quality of life while at home."
   },
   {
     "title": "What are the Benefits?",
     "text": " <ul> <li> All treatments come to the person signed onto hospice.</li> <li> <a href='https://www.nia.nih.gov/health/what-respite-care'>Respite care</a> to help care givers rest.</li> <li> A team of professionals to help manage symptoms and ensure quality of life</li> <li> \"Medication for symptom control or pain relief\" <a href='https://hospicefoundation.org/Hospice-Care/Hospice-Services'>[1]</a></li> <li> Grieving services and ongoing counseling</li> </ul> ",
-    "imageURL": "placeholders/500x500.jpg"
+    "imageURL": "images/bed.png"
   },
   {
     "title": "Who Receives It?",
-    "text": " People qualify for hospice if they: <ol> <li> Have a life expectancy of up to six months and </li> <li> Choose to decline further aggressive treatment of their illness</li> <li>For more specific guidelines see <a href='https://www.vitas.com/for-healthcare-professionals/hospice-and-palliative-care-eligibility-guidelines/hospice-eligibility-guidelines'>Eligibility Guidelines</a>.</li> </ol> Hospice is covered by <a href='https://www.medicaid.gov/medicaid/benefits/hospice-benefits/index.html'>medicaid</a> and many private insurance plans also cover it so it is available to low income individuals.",
-    "imageURL": "placeholders/500x500.jpg"
+    "text": " People qualify for hospice if they: <ol> <li> Have a life expectancy of up to six months and </li> <li> Choose to decline further aggressive treatment of their illness</li> <li>For more specific guidelines see <a href='https://www.vitas.com/for-healthcare-professionals/hospice-and-palliative-care-eligibility-guidelines/hospice-eligibility-guidelines'>Eligibility Guidelines</a>.</li> </ol> Hospice is covered by <a href='https://www.medicaid.gov/medicaid/benefits/hospice-benefits/index.html'>medicaid</a> and many private insurance plans also cover it so it is available to low income individuals."
   },
   {
     "title": "What is hospice not?",
     "text": "<ul> <li> <b>Hospice is not only for people with cancer</b>, it is available to anyone with a terminal illness.</li> <li><b>Hospice is not the ceasing of medical care.</b> <br /> Hospice is the change of focus of medical care from fighting an illness to improving quality of life </li> <li><b>It is not mandatory or irreversible.</b> <br /> Once signed on to hospice people are free to sign off whenever they would like <a href='https://hospicefoundation.org/Hospice-Care/Dispelling-Hospice-Myths'>[5]</a> </li> </ul> ",
-    "imageURL": "placeholders/500x500.jpg"
+    "imageURL": "images/not.png"
   },
   {
     "title": "Where are some good resources to learn more?",
-    "text": " <ul> <li><a href='https://hospicefoundation.org/Hospice-Care/Hospice-Services'>What Is Hospice?</a></li> <li><a href='https://www.medicaid.gov/medicaid/benefits/hospice-benefits/index.html'>Hospice Benefits</a></li> <li><a href='https://www.wesleylife.org/blog/news/20-stats-to-know-about-hospice-care-in-the-us.aspx'>20 Stats to know about Hospice</a></li> <li><a href='https://www.debt.org/medical/hospice-costs/'>Costs of Hospice and End of Life care</a></li> <li><a href='https://hospicefoundation.org/Hospice-Care/Dispelling-Hospice-Myths'>Hospice Myths</a></li> <li><a href='https://www.wesleylife.org/blog/news/20-stats-to-know-about-hospice-care-in-the-us.aspx'>Hospice Facts</a></li> <li><a href='https://www.trihealth.com/dailyhealthwire/health-topics/well-being/8-little-known-facts-about-hospice-care-that-might-surprise-you'>8 Little known facts about Hospice</a></li> <li><a href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjH1bmElufsAhVnZN8KHcLqBHMQFjAAegQIDhAC&url=https%3A%2F%2Fwww.medicare.gov%2FPubs%2Fpdf%2F02154-medicare-hospice-benefits.pdf&usg=AOvVaw29Gt3_KOHWUZd6EbRYHCl9'>Hospice Benefits - Medicare</a></li> </ul> ",
-    "imageURL": "placeholders/500x500.jpg"
+    "text": " <ul> <li><a href='https://hospicefoundation.org/Hospice-Care/Hospice-Services'>What Is Hospice?</a></li> <li><a href='https://www.medicaid.gov/medicaid/benefits/hospice-benefits/index.html'>Hospice Benefits</a></li> <li><a href='https://www.wesleylife.org/blog/news/20-stats-to-know-about-hospice-care-in-the-us.aspx'>20 Stats to know about Hospice</a></li> <li><a href='https://www.debt.org/medical/hospice-costs/'>Costs of Hospice and End of Life care</a></li> <li><a href='https://hospicefoundation.org/Hospice-Care/Dispelling-Hospice-Myths'>Hospice Myths</a></li> <li><a href='https://www.wesleylife.org/blog/news/20-stats-to-know-about-hospice-care-in-the-us.aspx'>Hospice Facts</a></li> <li><a href='https://www.trihealth.com/dailyhealthwire/health-topics/well-being/8-little-known-facts-about-hospice-care-that-might-surprise-you'>8 Little known facts about Hospice</a></li> <li><a href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjH1bmElufsAhVnZN8KHcLqBHMQFjAAegQIDhAC&url=https%3A%2F%2Fwww.medicare.gov%2FPubs%2Fpdf%2F02154-medicare-hospice-benefits.pdf&usg=AOvVaw29Gt3_KOHWUZd6EbRYHCl9'>Hospice Benefits - Medicare</a></li> </ul> "
   }
 ]
