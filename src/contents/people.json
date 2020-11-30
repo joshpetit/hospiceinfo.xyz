@@ -3,7 +3,7 @@
     "name": "Hospice Doctor",
     "imageURL": "images/doctor.png",
     "shortText": "The Hospice Doctor oversees care and prescribes medication for pain.",
-    "longText": "The hospice doctor can be your primary care physician or possibly the Hospice medical director."
+    "longText": "The hospice doctor can be someone's primary care physician or possibly the Hospice medical director."
   },
   {
     "name": "Nurse",
@@ -20,14 +20,14 @@
   {
     "name": "Social Worker",
     "imageURL": "images/socialworker.png",
-    "shortText": "Speaks to the family and person receiving hospice about family issue.",
-    "longText": "The social worker helps with logisitics and side issues. They also help in planning for the future and coordinating care schedules."
+    "shortText": "Speaks to the family and person receiving hospice about family issues.",
+    "longText": "The social worker helps with logistics  and side issues. They also help in planning for the future and coordinating care schedules."
   },
   {
     "name": "Chaplain",
     "imageURL": "images/chaplain.png",
     "shortText": "Provides spiritual support, they are for people of any faith.",
-    "longText": "Chaplains help organize religious rites that someone requests and getting them in contact with another of their own faith tradition. Chaplains can also be very good counselors to speak about issues to."
+    "longText": "Chaplains help organize religious rites that someone requests and getting them in contact with another of their own faith tradition. Chaplains can also be very good counselors to speak about issues with."
   },
   {
     "name": "Volunteer",
@@ -39,12 +39,12 @@
     "name": "Therapist",
     "imageURL": "images/therapist.png",
     "shortText": "Someone on hospice receives help from a variety of therapists.",
-    "longText": "Therapists range from physical therapists, dieticians, speech-lanague pathologists and other services."
+    "longText": "Therapists range from physical therapists, dieticians, speech-language  pathologists, and other services."
   },
   {
     "name": "Grief Counselor",
     "imageURL": "images/griefcounselor.png",
     "shortText": "Provides emotional and psychological care.",
-    "longText": "Grief Counselors prove care to both the person signed onto hospice, their family members, and their loved ones who may be dealing with issues of grief.  This service is given during and after the time of hospice."
+    "longText": "Grief Counselors provide care to both the person signed onto hospice, their family members, and their loved ones who may be dealing with issues of grief.  This service is given during and after the time of hospice."
   }
 ]
