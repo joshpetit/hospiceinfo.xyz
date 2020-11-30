@@ -19,7 +19,7 @@ let cards = [
     text:
       "A general overview of what hospice is, what it isn't, its benefits, and who can receive it",
     link: "#hospice-info",
-    imageURL: "images/logo.png"
+    imageURL: "images/newlogo.png"
   },
   {
     title: "Meet The Team",
